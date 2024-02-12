@@ -1,0 +1,36 @@
+@mixin reset_css_defaults{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// Layout
+
+$Mobile: 375px;
+$Desktop: 1440px;
+
+// Colors
+
+// Neutral
+
+$Very-Dark-Blue-BG: hsl(207, 26%, 17%);
+$Dark-Blue: hsl(209, 23%, 22%);
+$White: hsl(0, 0%, 100%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+$Dark-Gray: hsl(0, 0%, 52%);
+$Very-Dark-Blue-TXT: hsl(200, 15%, 8%);
+
+// Typography
+
+// Body
+
+$FSZ-Homepage-Items: 14px;
+$FSZ-Detail-Page: 16px;
+
+// Fonts
+
+$Nunito-Sans: "Nunito Sans", sans-serif;
+$FW-Light: 300;
+$FW-Semi-Bold: 600;
+$FW-Extra-Bold: 800;

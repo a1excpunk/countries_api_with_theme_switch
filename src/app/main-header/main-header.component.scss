@@ -1,0 +1,21 @@
+@use '../style/utils' as u;
+header {
+  background-color: u.$Dark-Blue;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 75px;
+  margin: auto;
+  h1 {
+    font-size: 1.7em;
+  }
+  .theme_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    cursor: pointer;
+    img {
+      width: 16px;
+      transform: rotate(5deg);
+    }
+  }
+}

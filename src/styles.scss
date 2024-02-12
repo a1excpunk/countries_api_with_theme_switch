@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@use "./app/style/utils" as u;
+
+* {
+  @include u.reset_css_defaults;
+  font-family: u.$Nunito-Sans;
+  color: u.$White;
+}
+body {
+  background-color: u.$Very-Dark-Blue-BG;
+  margin: auto;
+  font-size: u.$FSZ-Homepage-Items;
+  max-width: 1440px;
+}
