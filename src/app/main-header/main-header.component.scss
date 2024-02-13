@@ -1,4 +1,4 @@
-@use '../style/utils' as u;
+@use "../style/utils" as u;
 header {
   background-color: u.$Dark-Blue;
   display: flex;
@@ -7,6 +7,10 @@ header {
   gap: 20px;
   padding: 25px 75px;
   margin: auto;
+
+  @media screen and (max-width: 700px) {
+    padding: 25px;
+  }
   h1 {
     font-size: 1.7em;
   }

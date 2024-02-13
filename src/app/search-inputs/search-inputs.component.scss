@@ -2,10 +2,17 @@
 .search_and_filter_wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
   margin: 50px auto;
   max-width: calc(100% - 150px);
+  @media screen and (max-width: 700px){
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 30px 20px;
+  }
   .country_search_wrapper {
     position: relative;
+    width: 100%;
     img {
       position: absolute;
       top: 15px;
@@ -16,11 +23,15 @@
       background-color: u.$Dark-Blue;
       border: none;
       border-radius: 5px;
-      width: 400px;
-      min-width: 200px;
-      padding: 15px 30px 15px 60px;
+      width: 450px;
+      padding: 20px 30px 20px 60px;
       &::placeholder {
         color: u.$White;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      #country_search {
+        width: 100%;
       }
     }
   }
