@@ -56,7 +56,7 @@
     }
     ul {
       border-radius: 6px;
-      height: 200px;
+      height: 150px;
       position: absolute;
       overflow: auto;
       width: 100%;
@@ -65,12 +65,12 @@
       display: none;
       li {
         list-style-type: none;
-        margin: 10px 0;
+        margin: 7px 0;
         padding: 5px 20px;
         cursor: pointer;
 
         &:first-child {
-          margin-top: 15px;
+          margin-top: 13px;
         }
         &:hover {
           color: u.$Dark-Gray;

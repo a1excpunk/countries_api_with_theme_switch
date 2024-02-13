@@ -8,20 +8,13 @@
       placeholder="Search for a country..."
     />
   </div>
-  <div class="custom-select">
-    <img src="../../assets/chevron-down-outline.svg" alt="">
-    <div id="selection_input">Filter by Region</div>
-    <ul>
-      <li value="1">lorem ipsum</li>
-      <li value="2">lorem ipsum</li>
-      <li value="3">lorem ipsum</li>
-      <li value="4">lorem ipsum</li>
-      <li value="5">lorem ipsum</li>
-      <li value="6">lorem ipsum</li>
-      <li value="7">lorem ipsum</li>
-      <li value="8">lorem ipsum</li>
-      <li value="9">lorem ipsum</li>
-      <li value="10">lorem ipsum</li>
+  <div class="custom-select" (click)="toggleRegionSelector()">
+    <img src="../../assets/chevron-down-outline.svg" alt="" />
+    <div id="selection_input">{{regionPlaceholder}}</div>
+    <ul [ngStyle]="{'display': this.regionSelectorOpen ? 'block' : 'none'}">
+      <li value="1" *ngFor="let region of regions" (click)="selectRegion(region)">
+        {{region}}
+      </li>
     </ul>
   </div>
 </div>
