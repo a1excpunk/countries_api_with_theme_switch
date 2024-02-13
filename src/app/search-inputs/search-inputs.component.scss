@@ -25,10 +25,46 @@
     }
   }
 
-  #region_filter {
-    background-color: u.$Dark-Blue;
-    padding: 15px;
-    border: none;
-    border-radius: 4px;
+  .custom-select {
+    width: 200px;
+    position: relative;
+    img {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 20px;
+      right: 15px;
+    }
+    #selection_input {
+      background-color: u.$Dark-Blue;
+      padding: 20px 25px;
+      border-radius: 6px;
+      width: 100%;
+      margin-bottom: 4px;
+      cursor: pointer;
+    }
+    ul {
+      border-radius: 6px;
+      height: 200px;
+      position: absolute;
+      overflow: auto;
+      width: 100%;
+      scrollbar-width: none;
+      background-color: u.$Dark-Blue;
+      display: none;
+      li {
+        list-style-type: none;
+        margin: 10px 0;
+        padding: 5px 20px;
+        cursor: pointer;
+
+        &:first-child {
+          margin-top: 15px;
+        }
+        &:hover {
+          color: u.$Dark-Gray;
+        }
+      }
+    }
   }
 }
