@@ -1,0 +1,10 @@
+.cards {
+  max-width: calc(100% - 150px);
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+  row-gap: 70px;
+  width: 100%;
+}
