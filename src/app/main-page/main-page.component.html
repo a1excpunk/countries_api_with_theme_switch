@@ -1,4 +1,4 @@
 <app-search-inputs></app-search-inputs>
 <div class="cards">
-  <app-country-card *ngFor="let item of items"></app-country-card>
+  <app-country-card *ngFor="let item of items" (click)="detailsPage()" routerLink="/details-page" routerLinkActive="active" ariaCurrentWhenActive="page"></app-country-card>
 </div>
