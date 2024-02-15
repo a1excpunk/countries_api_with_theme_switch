@@ -1,0 +1,24 @@
+@use "../style/utils" as u;
+
+.back_button{
+    background-color: u.$Dark_Blue;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 25px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(5, 5, 5, 0.5);
+    cursor: pointer;
+
+    margin-top: 20px;
+
+    &:hover img{
+        transform: translateX(-10px);
+    }
+    img{
+        transition: 500ms ease;
+        width: 17px;
+    }
+}
