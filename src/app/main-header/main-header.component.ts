@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './main-header.component.scss'
 })
 export class MainHeaderComponent {
+  changeTheme() {
 
+  }
 }
