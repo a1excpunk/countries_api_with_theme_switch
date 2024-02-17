@@ -1,18 +1,18 @@
 <div class="country_card">
-  <img src="https://flagcdn.com/w320/de.png" alt="" class="country_img" />
+  <img src="{{data.flags.png}}" alt="{{data.name}} flag" class="country_img" />
   <div class="card_text">
-    <p class="country_name">Germany</p>
+    <p class="country_name">{{data.name}}</p>
     <p class="country_population">
       <span>Population: </span>
-      <span class="country_population_value">81,770,900</span>
+      <span class="country_population_value">{{data.population}}</span>
     </p>
     <p class="country_region">
-      <span>Religion: </span>
-      <span class="country_religion_value"></span>
+      <span>Region: </span>
+      <span class="country_region_value">{{data.region}}</span>
     </p>
     <p class="country_capital">
       <span>Capital: </span>
-      <span class="country_capitaln_value"></span>
+      <span class="country_capital_value">{{data.capital}}</span>
     </p>
   </div>
 </div>
