@@ -1,24 +1,70 @@
 @use "../style/utils" as u;
 
-.back_button{
-    background-color: u.$Dark_Blue;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 7px 25px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px rgba(5, 5, 5, 0.5);
-    cursor: pointer;
+.back_button {
+  background-color: u.$Dark_Blue;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 25px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(5, 5, 5, 0.5);
+  cursor: pointer;
+  margin: 50px 0;
 
-    margin-top: 20px;
-
-    &:hover img{
-        transform: translateX(-10px);
+  &:hover img {
+    transform: translateX(-10px);
+  }
+  img {
+    transition: 500ms ease;
+    width: 17px;
+  }
+}
+.details_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  img {
+    width: 550px;
+    height: 400px;
+  }
+  .details_content {
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 40px;
     }
-    img{
-        transition: 500ms ease;
-        width: 17px;
+    .details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 2fr 1fr;
+      gap: 50px;
+      .details_one,
+      .details_two {
+        p {
+          margin-bottom: 15px;
+        }
+      }
+      .border_countries {
+        grid-column: 1 / 3;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        .border_countrie_btns {
+          display: flex;
+          gap: 10px;
+          .border_countrie_btn {
+            background-color: u.$Dark_Blue;
+            font-size: .75rem;
+            font-size:u.$FW-Light; 
+            border: none;
+            padding: 7px 20px;
+            border-radius: 3px;
+            box-shadow: 1px 1px 5px rgba(5, 5, 5, 0.2);
+            cursor: pointer;
+          }
+        }
+      }
     }
+  }
 }

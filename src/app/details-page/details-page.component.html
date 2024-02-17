@@ -1,1 +1,53 @@
-<button routerLink="/main" routerLinkActive="active" ariaCurrentWhenActive="page" class="back_button"> <img src="../../assets/arrow-back-outline.svg" alt="">Back</button>
+<button
+  routerLink="/main"
+  routerLinkActive="active"
+  ariaCurrentWhenActive="page"
+  class="back_button"
+>
+  <img src="../../assets/arrow-back-outline.svg" alt="" />Back
+</button>
+<div class="details_wrapper">
+  <img src="{{ data.flags.svg }}" alt="" />
+  <div class="details_content">
+    <h2>{{ data.name }}</h2>
+    <div class="details">
+      <div class="details_one">
+        <p>Native Name: {{ data.nativeName }}</p>
+        <p>Population: {{ data.population |  number}}</p>
+        <p>Region: {{ data.region }}</p>
+        <p>Sub Region: {{ data.subregion }}</p>
+        <p>Capital: {{ data.capital }}</p>
+      </div>
+      <div class="details_two">
+        <p>Top Level Domain: {{ data.topLevelDomain }}</p>
+        <p>
+          Currencies:
+          <span *ngFor="let currencie of data.currencies; let i = index">
+            {{ currencie.name | comma : data.currencies.length : i }}
+            <!-- data.currencies.length > 1
+              ? currencie.name + ", "
+              : currencie.name -->
+          </span>
+        </p>
+        <p>
+          Languages:
+          <span *ngFor="let language of data.languages; let i = index">
+            {{ language.name | comma : data.languages.length : i }}
+          </span>
+        </p>
+      </div>
+
+      <div class="border_countries">
+        <p>Border Countries:</p>
+        <div class="border_countrie_btns">
+          <button
+            class="border_countrie_btn"
+            *ngFor="let border of data.borders"
+          >
+            {{ border }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
